@@ -10,7 +10,8 @@ A markup extension for Avalonia, that allows you to use Font Awesome. It already
 - outline color/width
 - placement and relative sizing
 - automatically detects if element you use it on is enabled/disabled
-- alternatively you can just write custom SVG style snippet, that will be inserted into `<path style="{your_style}" />`
+- alternatively you can just write custom SVG style snippet,<BR/>
+  that will be inserted into `<path style="{your_style}" />`
 
 **Usage?**
 
