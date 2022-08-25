@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net6.0</TargetFrameworks>
+	<Nullable>disable</Nullable>
+	<PackageId>Velvet.Library.Avalonia.Font.Awesome</PackageId>
+	<Title>Font Awesome Library for Avalonia UI</Title>
+	<Authors>SmartK8</Authors>
+	<Product>Font Awesome for Avalonia</Product>
+	<Copyright>Velvet © 2022</Copyright>
+	<PackageTags>C#,avalonia,font,awesome,library</PackageTags>
+	<PackageIcon>YinYang.png</PackageIcon>
+	<Description>A markup extension for Avalonia, that allows you to use Font Awesome.
+It already contains version 6 (alpha 2). You can combine upto two glyphs.
+Including style, colors, outline, placement or custom SVG styling.</Description>
+	<PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>USE_SKIASHARP</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DefineConstants>USE_SKIASHARP</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\YinYang.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Avalonia.Svg.Skia" Version="0.10.16" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
