@@ -35,6 +35,18 @@ Awesome.DefaultPrimary = Brushes.White;
 
 ![image](https://user-images.githubusercontent.com/2457949/186626711-bf3a5102-bc4b-44c6-a5f3-084785dcc802.png)
 
+**Properties explained:**
+
+`Version`   - enum that decides Awesome Font style (brands/duotone/light/regular/solid/thin)
+`Placement` - layout of glyph or glyphs
+`Major`     - name of the glyph #1 (main glyph)
+`Minor`     - name of the glyph #2 (side glyph)
+`Primary`   - color of the glyph #1 (ISolidColorBrush) - default: Black
+`Secondary` - color of the glyph #2 (ISolidColorBrush) - default: Black
+`Outline`   - color of the outline (ISolidColorBrush) - default: Transparent
+`Width`     - width of the outline - default: 0
+`Style`     - string to be inserted into `<path style="{style}" />`
+
 **Placement explained:**
 
 `Left`    - aligns glyph #2 to the left<br/>
